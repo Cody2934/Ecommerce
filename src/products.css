@@ -1,5 +1,6 @@
 * {
     text-align: center;
+    background-image: url(http://blog.hostbaby.com/wp-content/uploads/2013/07/scuffedstatic_blue1400x900.jpg);
 }
 
 .pics {
@@ -13,11 +14,11 @@ body {
 
 .price {
     font-family: "Courier New", Courier, monospace;
-    font-size: 23px;
+    font-size: 24px;
     letter-spacing: 0px;
     word-spacing: 2px;
-    color: #000000;
-    font-weight: 700;
+    color: whitesmoke;
+    font-weight: 900;
     text-decoration: underline solid rgb(68, 68, 68);
     font-style: normal;
     font-variant: normal;
@@ -32,7 +33,7 @@ p {
     font-size: 12px;
     letter-spacing: 2px;
     word-spacing: 2px;
-    color: #000000;
+    color: whitesmoke;
     font-weight: 400;
     text-decoration: overline solid rgb(68, 68, 68);
     font-style: italic;
@@ -45,7 +46,7 @@ p {
     font-size: 12px;
     letter-spacing: 2px;
     word-spacing: 2px;
-    color: #000000;
+    color: whitesmoke;
     font-weight: 400;
     text-decoration: overline solid rgb(68, 68, 68);
     font-style: italic;
@@ -58,10 +59,43 @@ p {
     font-size: 12px;
     letter-spacing: 2px;
     word-spacing: 2px;
-    color: #000000;
+    color: whitesmoke;
     font-weight: 400;
     text-decoration: overline solid rgb(68, 68, 68);
     font-style: italic;
     font-variant: small-caps;
     text-transform: capitalize;
+}
+
+h1 {
+    font-family: fantasy;
+    font-style: italic;
+    color: whitesmoke;
+}
+
+h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: whitesmoke;
+}
+
+a {
+    color: whitesmoke;
+}
+
+button {
+    color: rgb(255, 255, 255); 
+    font-size: 15px; 
+    line-height: 12px; 
+    padding: 4px; 
+    border-radius: 20px; 
+    font-family: Georgia, serif; 
+    font-weight: normal; 
+    text-decoration: none; 
+    font-style: normal; 
+    font-variant: normal; 
+    text-transform: none; 
+    background-image: linear-gradient(to right, rgb(28, 110, 164) 0%, rgb(35, 136, 203) 50%, rgb(20, 78, 117) 100%); 
+    box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px; 
+    border: 1px solid rgb(28, 110, 164); 
+    display: inline-block;
 }

@@ -34,11 +34,6 @@ function renderCars(cars) {
     //placing the 'button' in the pTag
     p.appendChild(button);
 
-    
-
-
-    
-
     return li;
 }
 
