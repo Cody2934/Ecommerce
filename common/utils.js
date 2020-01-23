@@ -36,8 +36,8 @@ export function calcOrderTotal(cart, cars) {
 
     for (let i = 0; i < cart.length; i++) {
         const lineItem = cart[i];
-        const cars = findById(cars, lineItem.id);
-        const lineTotal = calcLineTotal(lineItem.quantity, cars.price);
+        const findCar = findById(cars, lineItem.id);
+        const lineTotal = calcLineTotal(lineItem.quantity, findCar.price);
         orderTotal += lineTotal;
     }
 
