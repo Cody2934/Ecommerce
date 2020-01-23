@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+    text-align: center;
+    font-family: fantasy;
+    color: whitesmoke;
+    background-image: url(http://www.3rdeyephotographers.in/wp-content/uploads/2014/08/web-page-background-designs_667375.jpg);
+}
+
+body {
+    background-color: chartreuse;
+}
+
+img {
+    height: 505px;
+    width: 910px;
+}
