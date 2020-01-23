@@ -47,6 +47,7 @@ test('calculate line total', (assert) => {
 // This one can be left to students to do...
 test('calculate order total', (assert) => {
     // arrange
+    const 
     const expected = 75;
 
     // act
