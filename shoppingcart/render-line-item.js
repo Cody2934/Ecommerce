@@ -5,7 +5,7 @@ function renderLineItem(lineItem, rides) {
 
     const nameCell = document.createElement('td');
     nameCell.className = 'align-left';
-    nameCell.textContent = cars.name;
+    nameCell.textContent = rides.name;
     tr.appendChild(nameCell);
 
     const quantityCell = document.createElement('td');
@@ -13,12 +13,12 @@ function renderLineItem(lineItem, rides) {
     tr.appendChild(quantityCell);
 
     const priceCell = document.createElement('td');
-    priceCell.textContent = toUSD(cars.price);
+    priceCell.textContent = toUSD(rides.price);
     tr.appendChild(priceCell);
     
     const totalCell = document.createElement('td');
     totalCell.className = 'line-item-total';
-    const total = lineItem.quantity * cars.price;
+    const total = lineItem.quantity * rides.price;
     totalCell.textContent = toUSD(total);
     tr.appendChild(totalCell);
 
