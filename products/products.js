@@ -1,4 +1,4 @@
-import rides from './data/cars.js';
+import rides from '../data/cars.js';
 import renderCars from './renderCars.js';
 
 const list = document.getElementById('cars');
