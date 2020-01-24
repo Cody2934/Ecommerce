@@ -1,3 +1,4 @@
+//creat nonchanging variables and give them some...
 const camaro = {
     id: 'camaro',
     name: 'Chevrolet Camaro SS',
@@ -62,6 +63,7 @@ const corvette = {
     price: 120
 };
 
+//making all of the variables above a new variable
 const rides = [
     camaro, 
     sti, 
@@ -72,5 +74,6 @@ const rides = [
     corvette 
 ];
 
+//exporting the variables to be used somewhere else (out of scope)
 export default rides;
 

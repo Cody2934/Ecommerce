@@ -1,3 +1,4 @@
+//creating variables to be used specifically with building the cart
 const cart = [{
     id: 'camaro',
     quantity: 7
@@ -21,4 +22,5 @@ const cart = [{
     quantity: 1
 }];
 
+//exporting function to be used somewhere else
 export default cart;

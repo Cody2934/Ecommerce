@@ -1,3 +1,4 @@
+
 body {
     background-image: url(https://www.taomerle.com/wp-content/uploads/2017/12/web-page-background-color-with-html-in.jpg);
 }
@@ -75,4 +76,17 @@ tbody td {
 tfoot {
     background: #999;
     color: white;
+}
+
+#place-order-button {
+    margin-top: 30px;
+    height: 50px;
+    width: 200px;
+    font-size: 1.25em;
+    background: rgb(80, 255, 95);
+    color: whitesmoke;
+}
+
+#place-order-button:disabled {
+    opacity: 0.5;
 }
