@@ -1,3 +1,5 @@
+import { findById } from '../common/utils.js';
+
 //render cars is the name of the function to adapt the DOM
 function renderCars(cars) {
     //creating a 'li' HTML
@@ -30,10 +32,42 @@ function renderCars(cars) {
     //creating an 'add' button for shopping cart
     const button = document.createElement('button');
     button.textContent = 'Add';
-    button.value = cars.code;
-    //placing the 'button' in the pTag
+    button.value = cars.id;  //cars.code vs cars.id?????????????
+    button.addEventListener('click', () => {
+    
+        let json = localStorage.getItem('CART');
+        let cart;
+        if (json) {
+            cart = JSON.parse(json);
+        }
+        else {
+            cart = [];
+        }
+
+        let lineItem = findById(cart, cars.id); //cars.code vs cars.id???????????????
+    
+        if (!lineItem) {
+            lineItem = {
+                id: cars.id,
+                quantity: 1
+            };
+
+            cart.push(lineItem);
+        }
+        else {
+            lineItem.quantity++;
+        }
+
+        json = JSON.stringify(cart);
+        localStorage.setItem('CART', json);
+
+        alert('1 ' + cars.name + ' added to the cart.');
+
+    });
+        //placing the 'button' in the pTag
     p.appendChild(button);
 
+    li.appendChild(p);
     return li;
 }
 
